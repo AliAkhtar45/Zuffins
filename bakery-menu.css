@@ -33,6 +33,16 @@ body {
     linear-gradient(180deg, #fff8f1 0%, #fffaf5 46%, #f8efe5 100%);
 }
 
+.desktop-scale-shell {
+  width: 100%;
+  overflow: hidden;
+}
+
+.desktop-scale-stage {
+  width: 1440px;
+  transform-origin: top left;
+}
+
 img {
   display: block;
   width: 100%;
