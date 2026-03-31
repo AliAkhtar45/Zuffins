@@ -35,11 +35,13 @@ body {
 
 .desktop-scale-shell {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
+  height: auto !important;
 }
 
 .desktop-scale-stage {
-  width: 1440px;
+  width: 100%;
+  transform: none !important;
   transform-origin: top left;
 }
 
@@ -577,6 +579,14 @@ p {
 }
 
 @media (max-width: 760px) {
+  .desktop-scale-shell {
+    overflow: hidden;
+  }
+
+  .desktop-scale-stage {
+    width: 1440px;
+  }
+
   .site-header {
     position: static;
   }

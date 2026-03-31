@@ -4,8 +4,15 @@ const stage = document.querySelector(".desktop-scale-stage");
 function applyDesktopScale() {
   if (!shell || !stage) return;
 
-  stage.style.transform = "none";
+  if (window.innerWidth > 760) {
+    stage.style.width = "100%";
+    stage.style.transform = "none";
+    shell.style.height = "auto";
+    return;
+  }
+
   stage.style.width = "1440px";
+  stage.style.transform = "none";
 
   const scale = Math.min(window.innerWidth / 1440, 1);
   const stageHeight = stage.scrollHeight;
