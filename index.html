@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuffins | Bakery Menu</title>
+  <meta name="description" content="A modern bakery menu featuring muffins, brownies, cookies, breads, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bakery-menu.css">
+</head>
+<body>
+  <div class="topbar">
+    Freshly baked in small batches | Custom orders available soon
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="bakery-logo.png" alt="Zuffins Cake and Bakery logo" class="brand-logo">
+        <div class="brand-copy">
+          <strong>Zuffins</strong>
+          <span>Cake &amp; Bakery Menu</span>
+        </div>
+      </a>
+
+      <nav class="site-nav">
+        <a href="#menu">Menu</a>
+        <a href="#specials">Featured</a>
+        <a href="bakery-contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Home Bakery</p>
+          <h1>Baked with comfort, styled with charm.</h1>
+          <p class="hero-text">
+            A modern menu card for a growing baking business, designed to feel warm, premium,
+            and easy to browse. Perfect for sharing online or opening on a phone during orders.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="button button-primary">Explore Menu</a>
+            <a href="bakery-contact.html" class="button button-secondary">Contact Page</a>
+          </div>
+
+          <div class="hero-notes">
+            <div>
+              <strong>14</strong>
+              <span>Signature items</span>
+            </div>
+            <div>
+              <strong>Fresh</strong>
+              <span>Baked to order</span>
+            </div>
+            <div>
+              <strong>Stylish</strong>
+              <span>Simple modern layout</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fresh pastries and baked goods on display" loading="eager">
+          <div class="hero-card-panel">
+            <p class="panel-label">This Week's Mood</p>
+            <h2>Soft bakes, rich chocolate, golden pastry.</h2>
+            <p>From banana breads to churros, the menu balances cozy classics with dessert favorites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="specials">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Picks</p>
+          <h2>Items that steal attention instantly</h2>
+          <p>These signature cards make the menu feel more premium while keeping the full list easy to scan below.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="featured-card featured-large">
+            <img src="bakery-images/fudge%20brownies.jpg" alt="Chocolate brownies stacked on a plate" loading="lazy">
+            <div class="featured-copy">
+              <span class="tag">Rich Favorite</span>
+              <h3>Fudge Brownies</h3>
+              <p>Deep chocolate flavor, glossy tops, and a soft dense center.</p>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="bakery-images/Banana-Muffins-Plated-Cravings-8.jpg" alt="Assorted muffins arranged on a serving tray" loading="lazy">
+            <div class="featured-copy">
+              <span class="tag">Best for Breakfast</span>
+              <h3>Banana Muffin Collection</h3>
+              <p>Classic, chocolate banana, and hazelnut banana for three cozy choices.</p>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <img src="bakery-images/cinnamon%20rolls.jpg" alt="Cinnamon rolls with icing" loading="lazy">
+            <div class="featured-copy">
+              <span class="tag">Soft &amp; Sweet</span>
+              <h3>Cinnamon Rolls</h3>
+              <p>Swirled, buttery, and bakery-window worthy.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow">Full Menu</p>
+            <h2>Browse by craving</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="Filter menu categories">
+            <button class="filter-chip active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="muffins">Muffins</button>
+            <button class="filter-chip" type="button" data-filter="breads">Breads</button>
+            <button class="filter-chip" type="button" data-filter="treats">Treats</button>
+            <button class="filter-chip" type="button" data-filter="pastries">Pastries</button>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="muffins">
+            <img class="menu-card-media" src="bakery-images/Banana-Muffins-Plated-Cravings-8.jpg" alt="Banana muffins" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Muffins</p>
+              <span>01</span>
+            </div>
+            <h3>Banana Muffins</h3>
+            <p>Soft, moist, and naturally comforting with classic banana flavor.</p>
+          </article>
+
+          <article class="menu-card" data-category="muffins">
+            <img class="menu-card-media" src="bakery-images/Chocolate%20banana%20muffins.jpg" alt="Chocolate banana muffins" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Muffins</p>
+              <span>02</span>
+            </div>
+            <h3>Chocolate Banana Muffins</h3>
+            <p>Banana sweetness paired with rich chocolate notes.</p>
+          </article>
+
+          <article class="menu-card" data-category="muffins">
+            <img class="menu-card-media" src="bakery-images/Hazelnut%20Banana%20Muffins.jpg" alt="Hazelnut banana muffins" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Muffins</p>
+              <span>03</span>
+            </div>
+            <h3>Hazelnut Banana Muffins</h3>
+            <p>Nutty warmth layered into a soft banana muffin base.</p>
+          </article>
+
+          <article class="menu-card" data-category="breads">
+            <img class="menu-card-media" src="bakery-images/banana%20bread.jpg" alt="Banana bread loaf" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Loaf Cakes</p>
+              <span>04</span>
+            </div>
+            <h3>Banana Bread</h3>
+            <p>A timeless loaf with a moist crumb and homemade feel.</p>
+          </article>
+
+          <article class="menu-card" data-category="breads">
+            <img class="menu-card-media" src="bakery-images/Chocolate%20Banana%20Bread.jpg" alt="Chocolate banana bread loaf" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Loaf Cakes</p>
+              <span>05</span>
+            </div>
+            <h3>Chocolate Banana Bread</h3>
+            <p>The comfort of banana bread with a richer chocolate twist.</p>
+          </article>
+
+          <article class="menu-card" data-category="treats">
+            <img class="menu-card-media" src="bakery-images/fudge%20brownies.jpg" alt="Fudge brownies" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Chocolate</p>
+              <span>06</span>
+            </div>
+            <h3>Fudge Brownies</h3>
+            <p>Dense, indulgent, and made for serious chocolate lovers.</p>
+          </article>
+
+          <article class="menu-card" data-category="treats">
+            <img class="menu-card-media" src="bakery-images/CHOCOLATE%20CHIP%20COOKIES.jpg" alt="Chocolate chip cookies" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Cookies</p>
+              <span>07</span>
+            </div>
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Golden edges, gooey centers, and classic chocolate chips.</p>
+          </article>
+
+          <article class="menu-card" data-category="treats">
+            <img class="menu-card-media" src="bakery-images/Brookies.jpg" alt="Brookies" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Hybrid Bake</p>
+              <span>08</span>
+            </div>
+            <h3>Brookies</h3>
+            <p>A brownie-cookie fusion with crisp edges and a fudgy middle.</p>
+          </article>
+
+          <article class="menu-card" data-category="treats">
+            <img class="menu-card-media" src="bakery-images/zeera%20biscuits.jpg" alt="Zeera biscuits" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Tea Time</p>
+              <span>09</span>
+            </div>
+            <h3>Zeera Biscuits</h3>
+            <p>Lightly savory, fragrant, and perfect with chai.</p>
+          </article>
+
+          <article class="menu-card" data-category="pastries">
+            <img class="menu-card-media" src="bakery-images/cinnamon%20rolls.jpg" alt="Cinnamon rolls" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Pastries</p>
+              <span>10</span>
+            </div>
+            <h3>Cinnamon Rolls</h3>
+            <p>Soft spirals with sweet spice and a comforting bakery aroma.</p>
+          </article>
+
+          <article class="menu-card" data-category="pastries">
+            <img class="menu-card-media" src="bakery-images/Donuts.jpg" alt="Donuts" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Pastries</p>
+              <span>11</span>
+            </div>
+            <h3>Donuts</h3>
+            <p>Fluffy, fun, and ideal for glazed or filled variations.</p>
+          </article>
+
+          <article class="menu-card" data-category="pastries">
+            <img class="menu-card-media" src="bakery-images/fruit%20tarts.jpeg" alt="Fruit tart" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Desserts</p>
+              <span>12</span>
+            </div>
+            <h3>Fruit Tarts</h3>
+            <p>Fresh fruit over a delicate tart shell with a polished finish.</p>
+          </article>
+
+          <article class="menu-card" data-category="pastries">
+            <img class="menu-card-media" src="bakery-images/churros.jpg" alt="Churros with chocolate sauce" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Desserts</p>
+              <span>13</span>
+            </div>
+            <h3>Churros</h3>
+            <p>Crisp on the outside with a warm, sugary bite.</p>
+          </article>
+
+          <article class="menu-card" data-category="pastries">
+            <img class="menu-card-media" src="bakery-images/cream%20puffs.jpg" alt="Cream puffs" loading="lazy">
+            <div class="menu-card-top">
+              <p class="menu-type">Desserts</p>
+              <span>14</span>
+            </div>
+            <h3>Cream Puffs / Eclairs</h3>
+            <p>Elegant pastry shells filled with smooth cream and classic flavor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <img src="bakery-logo.png" alt="Zuffins Cake and Bakery logo" class="footer-logo">
+        <strong>Zuffins</strong>
+        <p>Menu card concept for a modern home baking business.</p>
+      </div>
+      <a href="bakery-contact.html" class="footer-link">Open Contact Page</a>
+    </div>
+  </footer>
+
+  <script src="bakery-menu.js"></script>
+</body>
+</html>
