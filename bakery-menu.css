@@ -576,6 +576,36 @@ p {
   .hero-card {
     min-height: 320px;
   }
+
+  .desktop-scale-stage .hero-grid {
+    grid-template-columns: 1fr 1.02fr;
+  }
+
+  .desktop-scale-stage .featured-grid {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  }
+
+  .desktop-scale-stage .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .desktop-scale-stage .contact-layout {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .desktop-scale-stage .featured-card,
+  .desktop-scale-stage .featured-large,
+  .desktop-scale-stage .hero-card {
+    min-height: 360px;
+  }
+
+  .desktop-scale-stage .featured-large {
+    min-height: 430px;
+  }
+
+  .desktop-scale-stage .hero-card {
+    min-height: 620px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -620,5 +650,40 @@ p {
 
   h2 {
     font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .desktop-scale-stage .site-header {
+    position: sticky;
+  }
+
+  .desktop-scale-stage .nav-wrap,
+  .desktop-scale-stage .site-nav,
+  .desktop-scale-stage .heading-row,
+  .desktop-scale-stage .footer-wrap {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .desktop-scale-stage .hero,
+  .desktop-scale-stage .section {
+    padding: 84px 0;
+  }
+
+  .desktop-scale-stage .hero-card-panel,
+  .desktop-scale-stage .contact-card,
+  .desktop-scale-stage .menu-card {
+    padding: 24px;
+  }
+
+  .desktop-scale-stage .brand-logo {
+    width: 116px;
+  }
+
+  .desktop-scale-stage h1 {
+    font-size: clamp(3rem, 5vw, 5.5rem);
+  }
+
+  .desktop-scale-stage h2 {
+    font-size: clamp(2.2rem, 3.4vw, 3.8rem);
   }
 }
